@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laura Velandia | Portfolio</title>
+
+  <style>
+    /* COLORES */
+    :root {
+      --purple-900: #4c1d95;
+      --purple-700: #6d28d9;
+      --purple-500: #8b5cf6;
+      --purple-100: #ede9fe;
+      --bg:         #faf8ff;
+      --text:       #2e1065;
+      --muted:      #6b5b8a;
+      --card:       #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+    /* ENCABEZADO */
+    .hero {
+      background: linear-gradient(135deg, var(--purple-700), var(--purple-900));
+      color: #fff;
+      padding: 90px 24px 70px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .hero p.subtitle {
+      font-size: 1.15rem;
+      color: var(--purple-100);
+      font-weight: 400;
+    }
+
+    /* BOTONES */
+    .buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 26px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: #fff;
+      color: var(--purple-700);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.12); }
+
+    /* ABOUT */
+    section { padding: 64px 0; }
+    .section-title {
+      font-size: 1.7rem;
+      color: var(--purple-700);
+      margin-bottom: 18px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 56px; height: 4px;
+      background: var(--purple-500);
+      border-radius: 4px;
+    }
+    .about-card {
+      background: var(--card);
+      border: 1px solid var(--purple-100);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(109, 40, 217, 0.06);
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--purple-100);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO  -->
+  <header class="hero">
+    
+    <h1>Laura Sophia Velandia</h1>
+
+    <p class="subtitle">BSc Computer Science Student | AI Builder</p>
+
+    <div class="buttons">
+     
+      <a class="btn btn-primary" href="https://github.com/lauravelandiam/computer_science_lab" target="_blank">GitHub</a>
+
+     
+      <a class="btn btn-outline" href="cv/cv.pdf"_blank">My CV</a>
+
+      
+      <a class="btn btn-outline" href="https://linkedin.com/in/laura-sophia-velandia-488546385" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ABOUT  -->
+  <main class="container">
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-card">
+        <p>BSc Computer Science student at GISMA University in Berlin and Working Student in IT Operations at GetYourGuide. I build AI-powered tools and prototypes using platforms like Claude, Lovable, and Langdock, with a technical foundation from Harvard's CS50 series (Python, Cybersecurity). I enjoy turning complex problems into simple, working solutions, and I'm currently growing my skills in software development, automation, and building for the web.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footnotes -->
+  <footer>
+    <p>&copy; 2026 Laura Sophia Velandia</p>
+  </footer>
+
+</body>
+</html>
+
+
